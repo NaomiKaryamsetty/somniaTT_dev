@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Somnia Tours & Travels</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styling.css">
+
+	<title>Home | Somnia Tours & Travels</title>
 </head>
 <body>
-	<h1>Somnia Tours & Travels</h1>
+
+	<!-- headerSection -->
+	<section id="headerSection">
+		<header>
+			<nav>
+				<ul>
+					<!-- Somnia logo -->
+					<li>
+						<a href="index.html"><img src="imgs/somniaLogo01.1.svg" alt="Somnia Tours & Travels" class="headerLogo"></a>
+					</li>
+					
+					<!-- Home & Packages navigation -->
+					<div class="navRight">
+						<li><a href="index.html" class="activeLink">Home</a></li>
+						<li><a href="packages.html">Packages</a></li>
+					</div>
+					
+				</ul>
+			</nav>
+		</header>
+	</section>
+
+	<!-- landerSection -->
+	<section id="landerSection">
+		<div class="container blurBGbox">
+
+			<img src="imgs/somniaLogo01.1.svg" alt="Somnia Tours & Travels" style="height: 120px; width: auto;">
+			<h1 class="landerH1">Affordable tour packages for the discerning NPC</h1>
+			<h4 class="landerH4">See the Four Kingdoms!</h4>
+
+		</div>
+	</section>
+
+	<!-- takeThePlunge -->
+	<section id="takeThePlunge" class="yellowBG">
+		<div class="container">
+			
+			<h2>Take the plunge</h2>
+			<p>As non-playing characters, we’ve all felt sidelined to the narrative. Who gets to go on all the adventures? Our family members, friends, enemies, or visitors to our tavern! Everyone needs a chance to kick back, relax, and have an event that caters to <em>you</em> once in a while. After all, we’ve got to get our expository knowledge from somewhere! Why should PCs have all the fun?</p>
+			<a href="#contact" class="button-white">Book now</a>
+
+		</div>
+	</section>
+
+	<!-- whyUs -->
+	<section id="whyUs">
+		<div class="container">
+			
+			<h1>Why Us</h1>
+
+			<div class="blurbRow">
+				<div class="blurb">
+					<div class="blurbImg">
+						<img src="imgs/icons-jpg/icon-castle.jpg" alt="Castle">
+					</div>
+					<h3>Homage to Royalty</h3>
+					<p>Visits to all neighbouring castles, keeps and dungeons included</p>
+				</div>
+
+				<div class="blurb">
+					<div class="blurbImg">
+						<img src="imgs/icons-jpg/icon-barn.jpg" alt="Inn">
+					</div>
+					<h3>Indoor Sleeping	</h3>
+					<p>With free hot baths at every inn upon request	</p>
+				</div>
+
+				<div class="blurb">
+					<div class="blurbImg">
+						<img src="imgs/icons-jpg/icon-scroll.jpg" alt="Paintbrush and scroll">
+					</div>
+					<h3>Souvenir Portraits</h3>
+					<p>In postcard size for your unlettered friends and relatives!</p>
+				</div>
+
+				<div class="blurb">
+					<div class="blurbImg">
+						<img src="imgs/icons-jpg/icon-torch.jpg" alt="Lit torch">
+					</div>
+					<h3>Midnight Celebrations</h3>
+					<p>Opt-in raids or campfire feasts for a holistic travel experience</p>
+				</div>
+				
+			</div> <!-- closing blurbRow -->
+
+			<a href="packages.html" class="button-yellow">See our packages</a>
+
+		</div>
+	</section> <!-- closing whyUs -->
+
+	<!-- contact -->
+	<section id="contact" class="yellowBG">
+		<div class="container">
+
+			<h1>Contact</h1>
+			<p>Letters via familiar, post, or Message spell will reach us at:</p>
+			<div class="addressBG">
+				<img src="imgs/icon-envelope.png" alt="Envelope">
+				<div class="address">
+					<a href="https://studio502r.com" target="blank"></a>
+					<p><strong>Somnia Tours & Travels</strong><br> 14, Backwater Street<br>Cheapside, Capitalia, S502R</p>
+				</div>
+			</div>
+
+			<p>You can also fill in this form:</p>
+
+			<div id="contactForm">
+				<form>
+					
+					<div class="formRow">
+						<input type="text" name="custName" placeholder="Name">
+						<input type="text" name="custSpecies" placeholder="Single or mixed-species">
+						<input type="text" name="custPartySize" placeholder="Party size">
+					</div>
+
+					<div class="formRow">
+						<textarea name="custMessage" placeholder="Accommodations or requests"></textarea>
+					</div>
+
+					<div class="formRow">
+						<input type="radio" name="custPref" id="privTour" value="privateTour">
+						<label for="privTour">Private tour</label>
+
+						<input type="radio" name="custPref" id="grpTour" value="groupTour">
+						<label for="grpTour">Group tour</label>
+					</div>
+
+					<div class="formRow">
+						<input type="submit" name="submit" value="Submit" class="button-yellow">
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section id="footerSection">
+		<div class="container">
+
+			<footer>
+				A project to learn responsive design • Created by Naomi Karyamsetty • Following <a href="https://www.skillshare.com/en/classes/responsive-web-development-html-and-css-for-web-designers/413694517/">this Skillshare class</a> • Last updated A.D. 8 February 2025
+			</footer>
+			
+		</div>
+	</section>
+
 </body>
 </html>
